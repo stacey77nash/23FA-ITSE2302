@@ -1,0 +1,91 @@
+<!-- 
+    NAME: Stacey Nash
+    COURSE: ITSE 2302 Intermediate Web Programming
+    DATE: Sept 17, 2023
+    DESCRIPTION: Build a simple website for Module 1 using HTML and CSS.
+--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add a logo to title tab (W3 Schools)-->
+    <title>Purrfect Pets</title>
+    <link rel="icon" type="image/x-icon" href="_img/icons/favicon.png">
+    <!-- connect CSS and JS sheets -->
+    <link rel="stylesheet" href="_css\style.css">
+    <script src="_script\script.js" defer></script> 
+</head>
+<!-- add logo, main title, navigation bar -->
+<body>
+    <header class="banner">
+        <img src="_img\icons\cat_logo.jpg" alt="cat wearing sunglasses and a tie">
+        <h1>Purrfect Pets</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#top">Home</a> <!-- #top goes to the top of the page -->
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- cat gallery -->
+    <main>
+        <section class="gallery">
+            <img src="_img/milada-vigerova-7E9qvMOsZEM-unsplash.jpg" alt="unsplash cat image by milada vigerova" width="510px" height="768px">
+            <img src="_img/timo-volz-ZlFKIG6dApg-unsplash.jpg" alt="unsplash cat image by timo volz" width="512px" height="768px">
+            <img src="_img/uriel-soberanes-xadzcCQZ_Xc-unsplash.jpg" alt="unsplash cat image by uriel soberanes" width="511px" height="768px">
+        </section>
+
+        <!-- about section -->
+        <section class="about">
+            <!-- <h3><a href="#top">Top</a></h3> -->
+            <h2>Why are cats the purrfect pets?</h2>
+
+             <!-- add looping cat video and remove download button (W3Schools)-->
+             <div class="video">
+                <video controls autoplay muted loop add controlsList="nodownload">
+                <source src="_img\catCleaning-small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> 
+            </div> 
+            <aside class="reasons">
+                <h3>
+                    <ul>
+                        <li>Their "meow" is gentle.</li>
+                        <li>They clean themselves.</li>
+                        <li>Their fur is soft.</li>
+                        <li>Their purr is soothing.</li>
+                        <li>They sleep a lot.</li>
+                        <li>Cats are chill.</li>
+                   </ul>
+                </h3>
+            </aside>
+              
+        </section>
+        <!-- contact section -->
+        <section class="social">
+            <!-- <h3><a href="#top">Top</a></h3> -->
+            <h2>Meow...MEOOOW! <br> means "Get in touch!"</h2>
+            <div class="cell-cat">
+                <img src="_img\cellPhoneCat-small.jpg" width="728" height="667" alt="cat sitting on the lap looking at a cellphone">
+            </div>
+            
+            <!-- social media icons list; #bottom allows page to stay at bottom when links are clicked. -->
+            <div class="icons">
+                <a href="#bottom"><img src="_img/icons/instagram.png"></a>
+                <a href="#bottom"><img src="_img/icons/twitter.png"></a>
+                <a href="#bottom"><img src="_img/icons/telegram.png"></a>
+                <a href="#bottom"><img src="_img/icons/facebook.png"></a>
+                <a href="#bottom"><img src="_img/icons/whatsapp.png"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Purrfect Pets &copy; 2023</h3>
+        <h3><a href="#top">Top of page</a></h3>
+
+    </footer>
+</body>
+
+</html>
