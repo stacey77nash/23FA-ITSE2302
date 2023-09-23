@@ -23,7 +23,7 @@ title {
 
 .banner { 
     display: grid;
-    font-size:4em;  
+    font-size:3em;  
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr;  
     gap: 2em; 
@@ -84,15 +84,15 @@ title {
 .video {
     display: grid;
     grid-area: 2 / 1 / 5 / 4;
-    min-height: fit-content;
-    max-width: fit-content;
-    margin-left: 5%;
+    min-height: auto;
+    max-width: 100%;
+    margin-left: 15%;
     margin-top: 5%;
 }
 .reasons {
     letter-spacing: 0.2rem;
     grid-area: 2 / 4 / 2 / 6;
-    justify-content: center; 
+    justify-content: leftcenter; 
     font-size: 1.2em; 
     
 }
@@ -125,7 +125,7 @@ title {
 .icons {
     display: flex; 
     justify-content: space-evenly;
-    border: white 5px solid;  
+      
 }
 /* footer section */
 footer {
