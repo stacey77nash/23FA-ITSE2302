@@ -1,0 +1,161 @@
+/* reset margins and padding in any browser */
+
+* {
+    display: grid; /* set entire document to grid  */
+    margin: 0;
+    padding: 0;
+    background-color: #E1C094;
+    font-family: Monotype Corsiva, serif;
+    width: auto;
+    
+}
+
+:any-link {
+    text-decoration: none;
+}
+
+/* header elements - title, logo, navbar */
+title {
+    /* hide title from webpage */
+    display: none;
+    visibility: hidden;
+}
+
+.banner { 
+    display: grid;
+    font-size:3em;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr;  
+    gap: 2em; 
+    min-width: fit-content;
+    /* background-color: antiquewhite;  */
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-evenly;
+    font-size: 3em;
+    min-width: fit-content;
+    
+}
+/* color links to match text */
+.navbar a {
+    font-size: 1.2em;
+    color: black;
+    font-weight: 700; 
+    padding: 1.1rem; 
+    /* margin-left: 33%;   */
+    text-align: left;
+}
+/* cat photos */
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: fit-content;
+    
+}
+
+.gallery img {
+    border: black 7px solid;
+}
+ /*  about section - title, video, reasons  */
+
+.about {
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(3, 0.2fr);
+    font-size: 2.5rem;
+    min-height: fit-content;
+    min-width: fit-content;
+    justify-content: space-evenly;
+    /* grid-column or row: start at col/row num, end at col/row num */
+}
+.about h2 {
+    grid-area: 1 / 1 / 1 / 4;
+    justify-content: center;
+    padding-top: 10%;
+    padding-right: 10%;
+    font-size: 2em;;
+}
+.about ul {
+    line-height: 4rem;
+    grid-template-columns: auto;
+}
+.video {
+    display: grid;
+    grid-area: 2 / 1 / 5 / 4;
+    min-height: auto;
+    max-width: 100%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.reasons {
+    letter-spacing: 0.2rem;
+    grid-area: 2 / 4 / 2 / 6;
+    justify-content: leftcenter; 
+    font-size: 1.2em; 
+    
+}
+/* social media - MEOW, cat on a phone, icons  */
+.social {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.3fr);
+    min-width: fit-content;
+    min-height: fit-content;
+    
+    
+}
+.social h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem; 
+      
+}
+.cell-cat img {
+    display: grid;  
+    border: black 7px solid;
+    border-radius: 20%;
+    margin-top: 10%;
+
+}
+
+/* align social media icons along the bottom */
+.icons {
+    display: flex; 
+    justify-content: space-evenly;
+      
+}
+/* footer section */
+footer {
+    display: grid;
+     font-size: 2.5rem;
+     text-align: center;
+     padding: 0.2rem;
+}
+
+
+
+
+
+
+
+/* Mobile-responsive queries */
+
+/* Larger than mobile */
+/* @media (min-width: 400px) {} */
+
+/* Larger than phablet */
+/* @media (min-width: 550px) {} */
+
+/* Larger than tablet */
+/* @media (min-width: 750px) {} */
+
+/* Larger than desktop */
+/* @media (min-width: 1000px) {} */
+
+/* Larger than Desktop HD */
+/* @media (min-width: 1200px) {} */
+
+/* center containers - play with min-max width */
