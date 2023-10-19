@@ -39,7 +39,7 @@ while(i < siteTopics.length){
 dayNames.reverse();
 
 // Print out the dayNames to the console using a for loop.
-for(d = 0; d < dayNames.length; d++){
+for(var d = 0; d < dayNames.length; d++){
     console.log(dayNames[d]);
 }
 // Remove the first item in the dayNames array using an appropriate array method.
