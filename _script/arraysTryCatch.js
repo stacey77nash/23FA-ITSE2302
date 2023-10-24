@@ -49,10 +49,10 @@ console.log(dayNames);
 // Create a try/catch block that includes an if condition to check if the first value of the dayNames array is equal to “Sunday”. If the condition is true, throw a string to the catch block that says "Error: Sunday should be missing!"  The catch block should display any thrown messages/strings in the browser's console.
 try{
     if(dayNames[0] == "Sunday"){
-        throw error; // change the logic operator to test this
+        throw "Error: Sunday should be missing!"; // change the logic operator to test this
     }
 }catch(error){
-    console.log("Error: Sunday should be missing!");
+    console.log(error);
 }
 
 // Add a finally block to the try/catch that displays the following text in the browser’s console: "(Use the variable with your name) was born in the year (use the variable with your birth year).  I think the day was either a (second value of the dayNames array) or (fourth value of the dayNames array)."
